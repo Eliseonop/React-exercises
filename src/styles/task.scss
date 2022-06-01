@@ -1,0 +1,21 @@
+h1 {
+  color: cyan;
+}
+
+.task-name {
+  font-weight: bold;
+  color: cadetblue;
+}
+.task-action {
+  color: #666;
+  font-size: 0.8em;
+}
+.task-completed {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+.task-pending {
+  font-weight: bold;
+  color: skyblue;
+}
