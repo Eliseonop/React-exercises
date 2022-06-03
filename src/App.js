@@ -2,6 +2,10 @@ import './App.css'
 
 import RegisterFormik from './components/pure/forms/registerFormik'
 import TaskListComponent from './components/container/task_list'
+import { AsyncExample } from './components/pure/AsyncExample'
+import { ObservableExample } from './components/pure/observableExample'
+import FetchExample from './components/pure/FetchExample'
+import { AxiosExample } from './components/pure/AxiosExample'
 function App () {
   return (
     <div className='App'>
@@ -27,7 +31,13 @@ function App () {
       {/* </header> */}
       {/* Gestión de eventos */}
       {/* <Father></Father> */}
-      <TaskListComponent></TaskListComponent>
+      {/* <TaskListComponent></TaskListComponent> */}
+      {/* <AsyncExample /> */}
+
+      {/* <ObservableExample /> */}
+      {/* <FetchExample /> */}
+      <AxiosExample />
+
       {/* <OptinoalRender></OptinoalRender> */}
       {/* <LoginFormik /> */}
       {/* <RegisterFormik /> */}
