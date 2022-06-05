@@ -9,11 +9,18 @@ import './index.css'
 
 import App from './App'
 import reportWebVitals from './reportWebVitals'
+// Inport config function of App Store
+import { createAppStore } from './store/config/storeConfig'
+import { Provider } from 'react-redux'
+
+let appStore = createAppStore()
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={appStore}>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </Provider>,
   document.getElementById('root')
 )
 
