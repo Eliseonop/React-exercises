@@ -1,10 +1,16 @@
 import './App.css'
-import Rectangulo from './components/Rectangulo'
+// import Counter from './components/Counter'
+import LoginUseReducer from './components/LoginUseReducer'
+// import LoginUseState from './components/LoginUseState'
 
 function App () {
   return (
     <div className='App'>
-      <Rectangulo />
+      <h1>userReducer exaple</h1>
+      {/* <Counter />
+       */}
+      {/* <LoginUseState /> */}
+      <LoginUseReducer />
     </div>
   )
 }
