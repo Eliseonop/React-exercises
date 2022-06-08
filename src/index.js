@@ -10,15 +10,18 @@ import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 // Inport config function of App Store
-import { createAppStore } from './store/config/storeConfig'
+import { createAppStore, creaAppAsyncStore } from './store/config/storeConfig'
 import { Provider } from 'react-redux'
+import AppReduxSaga from './AppReduxSaga'
 
-let appStore = createAppStore()
+// let appStore = createAppStore()
+let appAsyncStore = creaAppAsyncStore()
 
 ReactDOM.render(
-  <Provider store={appStore}>
+  <Provider store={appAsyncStore}>
     <React.StrictMode>
-      <App />
+      {/* <App /> */}
+      <AppReduxSaga />
     </React.StrictMode>
   </Provider>,
   document.getElementById('root')
