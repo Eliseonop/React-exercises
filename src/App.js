@@ -1,10 +1,13 @@
 import './App.css'
-import Rectangulo from './components/Rectangulo'
+import TaskListComponent from './components/TaskListComponent'
+import TaskListReducer from './components/TaskListReducer'
 
 function App () {
   return (
     <div className='App'>
-      <Rectangulo />
+      <TaskListReducer>
+        <TaskListComponent />
+      </TaskListReducer>
     </div>
   )
 }
